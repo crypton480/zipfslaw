@@ -25,9 +25,9 @@ This also uses Hadoop's streaming interface described here
 https://hadoop.apache.org/docs/r1.2.1/streaming.html
 
 Once inside the VM, clone the git repo, navigate to it and run the following command,
-`source run.sh metahistory.txt`
+`source run.sh input.txt`
 
-This will take the file metahistory.txt, load it in the Hadoop file system, run the MapReduce code (see below) and download the output from the Hadoop cluster. The output will contain an alphabetical listing of all the words in the text file, along with the frequency in a tab separated file.
+This will take the file input.txt, load it in the Hadoop file system, run the MapReduce code (see below) and download the output from the Hadoop cluster. The output will contain an alphabetical listing of all the words in the text file, along with the frequency in a tab separated file.
 
 This can be then sorted and analysed using any a separate script (not included!). Note that the word frequencies follow a Zipfian distribution. 
 
